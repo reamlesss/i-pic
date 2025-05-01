@@ -1,0 +1,86 @@
+/* Add styles to match the website's theme */
+.modal {
+  color: white;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.modal .form-label {
+  color: white;
+  font-weight: 600;
+}
+
+.modal-body,
+.modal-header,
+.modal-footer {
+  background-color: rgb(255, 255, 255);
+   border: none !important;
+}
+
+.image-input{
+    
+}
+.modal .form-control {
+  color: black;
+  border: 1px solid #7300ff;
+  border-radius: 5px;
+}
+
+.modal .form-control:focus {
+  box-shadow: none !important;
+  /* box-shadow: 0px 0px 10px #7300ff69; */
+  border-color: #7300ff;
+}
+
+.modal .btn-primary {
+    box-shadow: none !important;
+  background: linear-gradient(
+    180deg,
+    #7300ff 0%,
+    lch(22.05% 86.09 310.87) 100%
+  );
+  border: none;
+  /* box-shadow: 0px 0px 0px #2200ff99; */
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+
+.modal .btn-primary:hover {
+  background: linear-gradient(
+    180deg,
+    #7300ff 0%,
+    lch(22.05% 86.09 310.87) 100%
+  );
+  box-shadow: 0px 0px 5px #7300ff !important;
+  /* transform: scale(105%); */
+}
+
+.modal .btn-secondary {
+  background-color: transparent !important;
+  color: black ;
+  border: 1.5px solid #7300ff;
+  transition: .3s;
+  
+}
+.modal .btn-secondary:hover {
+    
+
+  border: 1.5px solid #7300ff;
+
+  box-shadow: 0px 0px 10px #7300ff48;
+  
+}
+
+.modal .form-control[type="file"] {
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+}
+
+.modal .form-control[type="file"]:focus {
+  box-shadow: none !important;
+  border-color: #7300ff;
+}
