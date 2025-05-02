@@ -1,86 +1,150 @@
 /* Add styles to match the website's theme */
-.modal {
+.upload-container {
   color: white;
-  border-radius: 30px;
-  padding: 20px;
+  padding: 40px;
+  background: rgba(43, 10, 81, 0.135);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  /* border: 1px solid rgb(255, 255, 255); */
+  border-radius: 25px;
+  box-shadow: 0px 0px 110px rgba(112, 2, 255, 0.94);
 }
 
-.modal .form-label {
+.upload-container .form-label {
   color: white;
+  margin: 5px !important;
+
   font-weight: 600;
 }
 
-.modal-body,
-.modal-header,
-.modal-footer {
-  background-color: rgb(255, 255, 255);
-   border: none !important;
+.upload-container .image-input {
+  background-color: white !important;
+  /* border: 1px solid #7300ff !important; */
+  /* box-shadow: 0px 0px 2px #7300ff57 !important; */
+  color: white !important;
+  padding: 6px !important;
 }
 
-.image-input{
-    
-}
-.modal .form-control {
-  color: black;
-  border: 1px solid #7300ff;
+.upload-container .form-control {
+  background-color: transparent !important;
+  color: white;
+
+  border: 1px solid white !important;
   border-radius: 5px;
+  /* box-shadow: 0px 0px 2px #7300ff57 !important; */
 }
 
-.modal .form-control:focus {
+.upload-container .form-control:focus {
   box-shadow: none !important;
-  /* box-shadow: 0px 0px 10px #7300ff69; */
   border-color: #7300ff;
 }
 
-.modal .btn-primary {
-    box-shadow: none !important;
+.form-control::placeholder,
+.image-input::placeholder {
+  color: white !important;
+  opacity: 0.5;
+}
+
+.upload-container .btn-primary {
+  box-shadow: none !important;
   background: linear-gradient(
     180deg,
     #7300ff 0%,
     lch(22.05% 86.09 310.87) 100%
   );
-  border: none;
-  /* box-shadow: 0px 0px 0px #2200ff99; */
+  border: 1px solid rgba(255, 255, 255, 0.465) !important;
   font-weight: 500;
   font-size: 1rem;
   transition: 0.5s;
 }
 
-.modal .btn-primary:hover {
+.upload-container .btn-primary:hover {
   background: linear-gradient(
     180deg,
     #7300ff 0%,
     lch(22.05% 86.09 310.87) 100%
   );
   box-shadow: 0px 0px 5px #7300ff !important;
-  /* transform: scale(105%); */
 }
 
-.modal .btn-secondary {
+.upload-container .btn-secondary {
   background-color: transparent !important;
-  color: black ;
-  border: 1.5px solid #7300ff;
-  transition: .3s;
-  
-}
-.modal .btn-secondary:hover {
-    
-
-  border: 1.5px solid #7300ff;
-
-  box-shadow: 0px 0px 10px #7300ff48;
-  
+  color: white;
+  border: white 1px solid;
+  transition: 0.3s;
 }
 
-.modal .form-control[type="file"] {
+.upload-container .form-control[type="file"] {
   color: black;
   border-radius: 5px;
-  padding: 10px;
+  /* padding: 10px; */
   background-color: #f8f9fa;
   border: 1px solid #ced4da;
 }
 
-.modal .form-control[type="file"]:focus {
+.upload-container .form-control[type="file"]:focus {
   box-shadow: none !important;
   border-color: #7300ff;
+}
+
+/* Add styles for the 'no file selected' text in the file input */
+.upload-container .form-control[type="file"]::file-selector-button {
+  color: white !important;
+  opacity: 0.5;
+}
+
+/* Custom file input styling */
+.custom-file-input {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border: 2px dashed white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.custom-file-input input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.custom-file-input .file-name {
+  color: white;
+  opacity: 0.5;
+  font-style: italic;
+  pointer-events: none;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: white;
+  opacity: 0.8;
+}
+
+/* Add styles for the upload icon */
+.custom-file-input .upload-icon {
+  color: white;
+  opacity: 0.8;
+  font-size: 1.8rem;
+  transition: transform 0.2s ease;
+}
+
+.custom-file-input .upload-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Update styles for the success state */
+.custom-file-input.file-selected {
+  border-color: transparent;
+  background-color: transparent;
+  border: 2px solid #8400ff;
+  box-shadow: 0px 0px 10px #7300ff00;
+  border-style: dashed !important;
+  opacity: 1;
+}
+
+.custom-file-input .upload-icon.success {
+  color: white;
 }

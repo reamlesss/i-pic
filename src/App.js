@@ -5,12 +5,34 @@ import Button from "react-bootstrap/Button";
 import cameraIcon from "./camera-icon.png"; // Import the camera icon
 import galleryIcon from "./gallery-icon.png"; // Import the gallery icon
 import UploadForm from "./components/UploadForm";
+import Particles from "./components/Particles";
 
 function App() {
   return (
     <>
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          zIndex: -1,
+        }}
+      >
+        <Particles
+          particleColors={["#ffffff", "#ffffff"]}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+        />
+      </div>
       <Navigation />
-      <UploadForm/>
+      <UploadForm />
       {/* <div className="d-flex justify-content-center align-items-center vh-100 flex-column">
         <h1 className="text-center text-primary heading-logo slide-in-blurred-bottom ">
           I Pic

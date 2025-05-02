@@ -1,0 +1,12 @@
+.particles-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    #15022c 0%,
+    lch(1.4% 8.18 305.91) 100%
+  ) !important;
+
+  
+}
