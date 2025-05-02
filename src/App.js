@@ -10,15 +10,17 @@ import Particles from "./components/Particles";
 function App() {
   return (
     <>
+      <Navigation />
       <div
         style={{
-          position: "absolute",
+          position: "fixed",
           top: 0,
           left: 0,
-          width: "100%",
-          height: "100%",
+          width: "100vw",
+          height: "100vh",
           zIndex: -1,
         }}
+        className="h-100 w-100"
       >
         <Particles
           particleColors={["#ffffff", "#ffffff"]}
@@ -31,16 +33,14 @@ function App() {
           disableRotation={false}
         />
       </div>
-      <Navigation />
-      <UploadForm />
-      {/* <div className="d-flex justify-content-center align-items-center vh-100 flex-column">
+      {/* <div className="vh-100 d-flex align-items-center justify-content-center flex-column">
         <h1 className="text-center text-primary heading-logo slide-in-blurred-bottom ">
           I Pic
         </h1>
         <h3 className="text-primary slide-in-blurred-bottom">
           I take a picture! I pick a picture!
         </h3>
-        <div className="d-flex gap-3 mt-2 flex-row">
+        <div className="d-flex gap-3 mt-2 flex-column">
           <Button className="btn-primary bg-primary slide-in-blurred-bottom">
             Upload
           </Button>
@@ -49,6 +49,7 @@ function App() {
           </Button>
         </div>
       </div> */}
+      <UploadForm />
     </>
   );
 }

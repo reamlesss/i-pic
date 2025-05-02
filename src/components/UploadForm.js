@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/heading-has-content */
 import { Button, Form } from "react-bootstrap";
 import "./UploadForm.css";
 import { useState } from "react";
@@ -12,7 +13,7 @@ function UploadForm() {
   };
 
   return (
-    <div className="d-flex justify-content-center align-items-center vh-100 flex-column mt-5 mb-5">
+    <div className="d-flex justify-content-center align-items-center  flex-column mt-5 mb-5">
       <div className="upload-container">
         <h2 className="upload-title text-center fw-bold">
           Upload your picture!
