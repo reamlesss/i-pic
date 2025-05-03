@@ -66,7 +66,12 @@ function App() {
           </div>
         </div>
       )}
-      {view === "upload" && <UploadForm handleCancel={() => setView("home")} />}
+      {view === "upload" && (
+        <UploadForm
+          handleCancel={() => setView("home")}
+          
+        />
+      )}
       {view === "browse" && <ImagePosts />}
     </>
   );

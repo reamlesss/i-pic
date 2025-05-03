@@ -1,0 +1,10 @@
+/* Initially hide the posts */
+.image-post {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Make posts visible when the animation starts */
+.image-post.slide-in-blurred-bottom {
+  opacity: 1;
+}
