@@ -4,7 +4,7 @@ import "./UploadForm.css";
 import { useState } from "react";
 import { FaUpload, FaCheckCircle } from "react-icons/fa";
 
-function UploadForm() {
+function UploadForm({ handleCancel }) {
   const [fileUploaded, setFileUploaded] = useState(false);
 
   const handleFileChange = (event) => {
@@ -60,10 +60,17 @@ function UploadForm() {
           </Form.Group>
 
           <div className="form-buttons d-flex flex-column align-items-center mt-4 gap-3">
-            <Button variant="primary" className="upload-button w-100">
+            <Button
+              variant="primary"
+              className=" bg-primary btn-primary w-100 "
+            >
               Save changes
             </Button>
-            <Button variant="secondary" className="w-100">
+            <Button
+              variant="secondary"
+              className="w-100"
+              onClick={handleCancel}
+            >
               Cancel
             </Button>
           </div>

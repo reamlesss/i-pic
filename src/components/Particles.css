@@ -7,6 +7,8 @@
     #15022c 0%,
     lch(1.4% 8.18 305.91) 100%
   ) !important;
+  
+  filter: blur(5px);
 
   
 }

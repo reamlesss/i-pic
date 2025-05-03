@@ -2,12 +2,13 @@
 .upload-container {
   color: white;
   padding: 40px;
-  background: rgba(43, 10, 81, 0.135);
+  /* background: rgba(43, 10, 81, 0.135); */
+  background: transparent !important;
   -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   /* border: 1px solid rgb(255, 255, 255); */
   border-radius: 25px;
-  box-shadow: 0px 0px 110px rgba(112, 2, 255, 0.94);
+  /* box-shadow: 0px 0px 110px rgba(112, 2, 255, 0.94); */
 }
 
 .upload-container .form-label {
