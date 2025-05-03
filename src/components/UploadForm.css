@@ -3,12 +3,25 @@
   color: white;
   padding: 40px;
   /* background: rgba(43, 10, 81, 0.135); */
-  background: transparent !important;
+  /* background: transparent !important; */
+  background: linear-gradient(
+    180deg,
+    #7300ff64 0%,
+    lch(22.18% 85.97 311 / 0.301) 100%
+  ) !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.595) !important;
+
+  -webkit-backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(5px) !important;
+  box-shadow: 0px 0px 34px #7300ff99 !important;
+
   -webkit-backdrop-filter: blur(10px);
   /* backdrop-filter: blur(10px); */
   /* border: 1px solid rgb(255, 255, 255); */
   border-radius: 25px;
   /* box-shadow: 0px 0px 110px rgba(112, 2, 255, 0.94); */
+  animation: slide-in-blurred-bottom 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
 .upload-container .form-label {

@@ -73,7 +73,7 @@ function Posts() {
           <img src={charlixcx} alt="Event" className="img-fluid rounded mb-3" />
           <div className="d-flex flex-column align-items-start mb-3">
             <p>
-              <strong>User:</strong> bendover
+              <strong>User:</strong> adripiana
             </p>
             <p>
               <strong>Location:</strong> Coachella
