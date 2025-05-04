@@ -89,7 +89,7 @@ function Posts() {
             <Button className="btn-primary bg-primary me-2 ">
               <FaDownload />
             </Button>
-            <span>Downloads: 543</span>
+            <span>Downloads: 3132</span>
           </div>
         </div>
         <div

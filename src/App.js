@@ -14,6 +14,19 @@ import shiktor_veen from "./shiktor_veen.jpg";
 import { FaDownload } from "react-icons/fa";
 import { useState } from "react";
 
+// Suppress ResizeObserver loop error
+if (typeof window !== "undefined") {
+  const resizeObserverErrorHandler = (e) => {
+    if (
+      e.message ===
+      "ResizeObserver loop completed with undelivered notifications."
+    ) {
+      e.stopImmediatePropagation();
+    }
+  };
+  window.addEventListener("error", resizeObserverErrorHandler);
+}
+
 function App() {
   const [view, setView] = useState("home");
 
@@ -66,12 +79,7 @@ function App() {
           </div>
         </div>
       )}
-      {view === "upload" && (
-        <UploadForm
-          handleCancel={() => setView("home")}
-          
-        />
-      )}
+      {view === "upload" && <UploadForm handleCancel={() => setView("home")} />}
       {view === "browse" && <ImagePosts />}
     </>
   );
